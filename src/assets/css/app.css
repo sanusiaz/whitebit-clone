@@ -549,12 +549,32 @@ video {
   top: 1.5rem;
 }
 
-.top-10{
-  top: 2.5rem;
+.left-0{
+  left: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .top-5{
   top: 1.25rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.top-10{
+  top: 2.5rem;
 }
 
 .top-7{
@@ -567,6 +587,18 @@ video {
 
 .-left-5{
   left: -1.25rem;
+}
+
+.right-2{
+  right: 0.5rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .m-0{
@@ -622,6 +654,22 @@ video {
   height: 0.75rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-\[27px\]{
+  height: 27px;
+}
+
 .h-5{
   height: 1.25rem;
 }
@@ -654,8 +702,8 @@ video {
   width: 0.75rem;
 }
 
-.w-\[414px\]{
-  width: 414px;
+.w-\[320px\]{
+  width: 320px;
 }
 
 .w-max{
@@ -665,6 +713,14 @@ video {
 
 .w-\[141px\]{
   width: 141px;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-5{
@@ -737,28 +793,44 @@ video {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
 
-.gap-8{
-  gap: 2rem;
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
 }
 
 .gap-2{
   gap: 0.5rem;
 }
 
-.gap-1{
-  gap: 0.25rem;
+.gap-7{
+  gap: 1.75rem;
 }
 
 .gap-5{
@@ -769,8 +841,8 @@ video {
   gap: 5rem;
 }
 
-.gap-4{
-  gap: 1rem;
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-3{
@@ -791,6 +863,11 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-darkBgColor{
@@ -853,16 +930,16 @@ video {
   padding: 0.75rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
 
 .p-headerSpacing{
   padding: 0.6875rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-7{
@@ -950,6 +1027,10 @@ video {
 
 .text-left{
   text-align: left;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-Inter{
@@ -1066,6 +1147,10 @@ video {
   transition-duration: 200ms;
 }
 
+.duration-300{
+  transition-duration: 300ms;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: Inerta;
 }
@@ -1097,15 +1182,58 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  header {
+    padding: var(--header-space) calc(var(--spaces)*4)
+  }
+
+  @media screen and (max-width: 880px) and (min-width: 700px) {
+    header {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    footer section {
+      padding-left: 2.6rem;
+      padding-right: 2.6rem;
+      max-width: 90rem;
+      padding-top: calc(var(--spaces)*7);
+    }
+
+    footer section div.sec {
+      padding-bottom: calc(var(--spaces)*7);
+    }
+
+    header {
+      padding: var(--header-space) calc(var(--spaces)*3)
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
+  footer section {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces)*7);
+  }
+
+  footer section div.sec {
+    padding-bottom: calc(var(--spaces)*7);
+  }
 }
 
 @media screen and (max-width: 500px) {
-}
+  footer section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces)*7);
+  }
 
-@media screen and (max-width: 380px) {
+  footer section div.sec {
+    padding-bottom: calc(var(--spaces)*7);
+  }
 }
 
 .hover\:cursor-pointer:hover{
@@ -1115,6 +1243,15 @@ header {
 .hover\:bg-darkHoverColor:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(16 16 20 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:stroke-blue-500:hover{
+  stroke: #3b82f6;
 }
 
 .hover\:text-primaryHoverColor:hover{
@@ -1140,14 +1277,64 @@ header {
   transition-duration: 200ms;
 }
 
+.group:hover .group-hover\:duration-300{
+  transition-duration: 300ms;
+}
+
 @media (min-width: 640px){
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:h-\[30px\]{
+    height: 30px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+}
+
 @media (min-width: 1024px){
+  .lg\:w-\[414px\]{
+    width: 414px;
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
   }
 }

@@ -16,7 +16,7 @@ $(document).ready(function () {
     $(".open__aside").click(function () {
         $("aside").slideToggle('slow');
     });
-
+    
     $(".close__aside").click(function () {
         $("aside").slideToggle('fast');
     });
