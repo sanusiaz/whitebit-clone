@@ -1093,6 +1093,21 @@ header {
   }
 }
 
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 380px) {
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
