@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    padding: var(--header-space) calc(var(--spaces)*7)
+    padding: var(--header-space) calc(var(--spaces)*7);
+    z-index: 999999;
 }
 
 
@@ -101,4 +102,82 @@ header {
     footer section div.sec {
         padding-bottom: calc(var(--spaces)*7);
     }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .add_linear_gradient_effect:after, .add_linear_gradient_effect:before {
+        top: -81%;
+        left: -30%;
+        width: 80%;
+        padding-top: 80%;
+    }
+}
+
+
+.add_linear_gradient_effect {
+    position: relative;
+    z-index: 9;
+}
+.add_linear_gradient_effect:after, .add_linear_gradient_effect:before {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 130%;
+    padding-top: 130%;
+    content: "";
+    background: radial-gradient(50% 50% at 50% 50%,rgba(240,163,72,.2) 0,rgba(240,163,72,0) 100%);
+    z-index: -1;
+}
+
+.add_linear_gradient_effect:after {
+    right: -60%;
+    left: auto;
+    background: radial-gradient(50% 50% at 50% 50%,rgba(240,72,233,.14) 0,rgba(240,72,233,0) 100%);
+
+    
+}
+
+@media (min-width: 1366px) {
+    .add_linear_gradient_effect:before {
+        height: 28.25rem;
+    }
+    .add_linear_gradient_effect:before,  .add_linear_gradient_effect:after {
+        top: -70%;
+        left: -30%;
+        width: 80%;
+        padding-top: 80%;
+    }
+     .add_linear_gradient_effect:after {
+        /* right: -14%;
+        width: 113%; */
+
+        right: 10px; width: 100%; left: 0; right: 30%;
+    }
+
+    .custom_hero_margin {
+        margin: 0 0 calc(var(--spaces)*17);
+    }
+
+    .treasure:before {
+        position: absolute;
+        top: 20%;
+        left: 0px;
+        right: 20%;
+        bottom: 0px;
+        content: '';
+        z-index: 1;
+        background-image: url(../images/treasure.png);
+        background-size: 59%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .custom_hero_margin {
+        max-width: 55rem;
+    }
+
 }

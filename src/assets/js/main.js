@@ -5,10 +5,10 @@ $(document).ready(function () {
     });
 
     // Add click events to show faq group
-    $("#faq div.faq-group").click(function () {
-        let __that = $(this);
+    $("#questions div.questions_inner_container .card .head").click(function () {
+        let __that = $(this).parent();
         __that.find('.inner').slideToggle();
-        __that.find('svg').toggleClass('rotate-90');
+        __that.find('svg').toggleClass('rotate-45');
     });
 
 

@@ -4,16 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bgColor: '#f8f8f8',
-        bgSectionLightColor: 'rgb(244, 251, 255)',
         darkBgColor: '#08080c',
-        darkSectionBgColor: '#262d42',
-        darkTextColor: '#b8bac0',
-        textColor: "#7367f0",
-        active: '#84c225',
-        customGreen: '#84c225',
-        customHoverGreen: '#98df2a',
         primaryHoverColor: '#f2d082',
+        primaryActiveColor: '#e3c682',
         darkHoverColor: '#101014'
       },
       fontFamily: {
@@ -40,7 +33,8 @@ module.exports = {
         miniScreenPadding: '',
         phonesPadding: '',
         headerSpacing: '0.6875rem',
-        headerSpaces: '0.5rem'
+        headerSpaces: '0.5rem',
+        paddingHorizon: '80px'
       }
     },
   },
