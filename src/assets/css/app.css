@@ -666,6 +666,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[27px\]{
+  height: 27px;
+}
+
 .h-5{
   height: 1.25rem;
 }
@@ -676,10 +680,6 @@ video {
 
 .h-12{
   height: 3rem;
-}
-
-.h-\[27px\]{
-  height: 27px;
 }
 
 .max-h-\[696px\]{
@@ -715,6 +715,10 @@ video {
   width: 141px;
 }
 
+.w-\[320px\]{
+  width: 320px;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -741,10 +745,6 @@ video {
 
 .w-32{
   width: 8rem;
-}
-
-.w-\[320px\]{
-  width: 320px;
 }
 
 .border-collapse{
@@ -1186,15 +1186,58 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  header {
+    padding: var(--header-space) calc(var(--spaces)*4)
+  }
+
+  @media screen and (max-width: 880px) and (min-width: 700px) {
+    header {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    footer section {
+      padding-left: 2.6rem;
+      padding-right: 2.6rem;
+      max-width: 90rem;
+      padding-top: calc(var(--spaces)*7);
+    }
+
+    footer section div.sec {
+      padding-bottom: calc(var(--spaces)*7);
+    }
+
+    header {
+      padding: var(--header-space) calc(var(--spaces)*3)
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
+  footer section {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces)*7);
+  }
+
+  footer section div.sec {
+    padding-bottom: calc(var(--spaces)*7);
+  }
 }
 
 @media screen and (max-width: 500px) {
-}
+  footer section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces)*7);
+  }
 
-@media screen and (max-width: 380px) {
+  footer section div.sec {
+    padding-bottom: calc(var(--spaces)*7);
+  }
 }
 
 .hover\:cursor-pointer:hover{
