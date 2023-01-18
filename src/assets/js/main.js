@@ -1,21 +1,22 @@
 $(document).ready(function () {
 
     $(".nav_hover").hover(function () {
+        console.log('Working here');
         $(this).find('.inner_nav_contents').toggleClass('hidden');
     });
 
     // Add click events to show faq group
-    $("#questions div.questions_inner_container .card .head").click(function () {
-        let __that = $(this).parent();
+    $("#faq div.faq-group").click(function () {
+        let __that = $(this);
         __that.find('.inner').slideToggle();
-        __that.find('svg').toggleClass('rotate-45');
+        __that.find('svg').toggleClass('rotate-90');
     });
 
 
     $(".open__aside").click(function () {
         $("aside").slideToggle('slow');
     });
-    
+
     $(".close__aside").click(function () {
         $("aside").slideToggle('fast');
     });
@@ -26,9 +27,5 @@ $(document).ready(function () {
 
         __that.find('svg').toggleClass('rotate-90');
 
-
     });
-
-
 });
-

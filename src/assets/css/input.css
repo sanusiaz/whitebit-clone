@@ -18,26 +18,26 @@ h5 {
 }
 
 :root {
-    --header-space: 0.8rem;
-    --spaces: 0.5rem;
-    --color-border: #3c3c44;
-    --transition-duration-lg: calc(var(--transition-duration)*2);
-    --border-radius: 0.5rem;
-    --border-radius-sm: 0.375rem;
-    --border-radius-lg: calc(var(--border-radius)*2);
-    --border-radius-xl: calc(var(--border-radius)*3);
-    --spaces: 0.5rem;
-    --header-height: 3.45rem;
-    --trade-info-height: 3rem;
+  --header-space: 0.8rem;
+  --spaces: 0.5rem;
+  --color-border: #3c3c44;
+  --transition-duration-lg: calc(var(--transition-duration) * 2);
+  --border-radius: 0.5rem;
+  --border-radius-sm: 0.375rem;
+  --border-radius-lg: calc(var(--border-radius) * 2);
+  --border-radius-xl: calc(var(--border-radius) * 3);
+  --spaces: 0.5rem;
+  --header-height: 3.45rem;
+  --trade-info-height: 3rem;
 }
 
 main {
-    padding-top: var(--header-height);;
+  padding-top: var(--header-height);
 }
 
 header {
-    padding: var(--header-space) calc(var(--spaces)*7);
-    z-index: 999999;
+  padding: var(--header-space) calc(var(--spaces) * 7);
+  z-index: 999999;
 }
 
 @media (min-width: 768px) {
@@ -56,186 +56,199 @@ header {
 @media screen and (max-width: 1100px) {
 }
 
-    .HitSteps:before {
-        position: absolute;
-        top: -4rem;
-        right: -0.9375rem;
-        bottom: -4.75rem;
-        left: -0.9375rem;
-        z-index: 1;
-        content: "";
-        background: url('../images/hitsBg.svg') 50% 50%/contain no-repeat;
-        width: 100%;
-    }
+.HitSteps:before {
+  position: absolute;
+  top: -4rem;
+  right: -0.9375rem;
+  bottom: -4.75rem;
+  left: -0.9375rem;
+  z-index: 1;
+  content: "";
+  background: url("../images/hitsBg.svg") 50% 50% / contain no-repeat;
+  width: 100%;
+}
 
 @media screen and (max-width: 900px) {
   header {
     padding: var(--header-space) calc(var(--spaces) * 4);
   }
 
+  @media screen and (max-width: 880px) and (min-width: 700px) {
     header {
-        padding: var(--header-space) calc(var(--spaces)*4)
+      font-size: 13px;
     }
-    
+  }
 
-    @media screen and (max-width: 880px) and (min-width: 700px) {
-        header {
-            font-size: 13px;
-        }
+  @media screen and (max-width: 770px) {
+    footer section {
+      padding-left: 2.6rem;
+      padding-right: 2.6rem;
+      max-width: 90rem;
+      padding-top: calc(var(--spaces) * 7);
     }
 
-    @media screen and (max-width: 770px) {
-
-        footer section {
-            padding-left: 2.6rem;
-            padding-right: 2.6rem;
-            max-width: 90rem;
-            padding-top: calc(var(--spaces)*7);        
-        }
-    
-        footer section div.sec {
-            padding-bottom: calc(var(--spaces)*7);
-        }
-
-        header {
-            padding: var(--header-space) calc(var(--spaces)*3)
-        }
-        
+    footer section div.sec {
+      padding-bottom: calc(var(--spaces) * 7);
     }
+
+    header {
+      padding: var(--header-space) calc(var(--spaces) * 3);
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    footer section {
-        padding-left: 2.3rem;
-        padding-right: 2.3rem;
-        max-width: 90rem;
-        padding-top: calc(var(--spaces)*7);        
-    }
-
-    footer section div.sec {
-        padding-bottom: calc(var(--spaces)*7);
-    }
-}
-
-@media screen and (max-width: 500px) {
-    footer section {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        max-width: 90rem;
-        padding-top: calc(var(--spaces)*7);        
-    }
-
-    footer section div.sec {
-        padding-bottom: calc(var(--spaces)*7);
-    }
-}
-
-@media screen and (min-width: 1366px) {
-
-    .add_linear_gradient_effect:after, .add_linear_gradient_effect:before {
-        top: -81%;
-        left: -30%;
-        width: 80%;
-        padding-top: 80%;
-    }
-}
-
-
-.add_linear_gradient_effect {
-    position: relative;
-    z-index: 9;
-}
-.add_linear_gradient_effect:after, .add_linear_gradient_effect:before {
-    position: absolute;
-    top: 0;
-    left: -60%;
-    width: 130%;
-    padding-top: 130%;
-    content: "";
-    background: radial-gradient(50% 50% at 50% 50%,rgba(240,163,72,.2) 0,rgba(240,163,72,0) 100%);
-    z-index: -1;
-}
-
-.add_linear_gradient_effect:after {
-    right: -60%;
-    left: auto;
-    background: radial-gradient(50% 50% at 50% 50%,rgba(240,72,233,.14) 0,rgba(240,72,233,0) 100%);
-
-    
-}
-
-@media (min-width: 1366px) {
-    .add_linear_gradient_effect:before {
-        height: 28.25rem;
-    }
-    .add_linear_gradient_effect:before,  .add_linear_gradient_effect:after {
-        top: -70%;
-        left: -30%;
-        width: 80%;
-        padding-top: 80%;
-    }
-     .add_linear_gradient_effect:after {
-        /* right: -14%;
-        width: 113%; */
-
-        right: 10px; width: 100%; left: 0; right: 30%;
-    }
-
-    .custom_hero_margin {
-        margin: 0 0 calc(var(--spaces)*17);
-    }
-
-    .treasure:before {
-        position: absolute;
-        top: 20%;
-        left: 0px;
-        right: 20%;
-        bottom: 0px;
-        content: '';
-        z-index: 1;
-        background-image: url(../images/treasure.png);
-        background-size: 59%;
-        background-repeat: no-repeat;
-        background-position: right center;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .custom_hero_margin {
-        max-width: 55rem;
-    }
+  footer section {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces) * 7);
+  }
 
   footer section div.sec {
     padding-bottom: calc(var(--spaces) * 7);
   }
 }
 
-.HitSteps .inner_cards:after {
+@media screen and (max-width: 500px) {
+  footer section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 90rem;
+    padding-top: calc(var(--spaces) * 7);
+  }
 
-
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 3.25rem;
-    height: 1.5625rem;
-    content: "";
-    background: url('../images/arrow-step.svg');
-    transform: translate(-50%,1.5625rem);
-
-    top: 1.4375rem;
-    right: 0.625rem;
-    left: auto;
-    transform: translate(0) rotate(-90deg);
-    right: -1.5625rem;
+  footer section div.sec {
+    padding-bottom: calc(var(--spaces) * 7);
+  }
 }
 
+@media screen and (min-width: 1366px) {
+  .add_linear_gradient_effect:after,
+  .add_linear_gradient_effect:before {
+    top: -81%;
+    left: -30%;
+    width: 80%;
+    padding-top: 80%;
+  }
+}
+
+.add_linear_gradient_effect {
+  position: relative;
+  z-index: 9;
+}
+.add_linear_gradient_effect:after,
+.add_linear_gradient_effect:before {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 130%;
+  padding-top: 130%;
+  content: "";
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(240, 163, 72, 0.2) 0,
+    rgba(240, 163, 72, 0) 100%
+  );
+  z-index: -1;
+}
+
+.add_linear_gradient_effect:after {
+  right: -60%;
+  left: auto;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(240, 72, 233, 0.14) 0,
+    rgba(240, 72, 233, 0) 100%
+  );
+}
+
+@media (min-width: 1366px) {
+  .add_linear_gradient_effect:before {
+    height: 28.25rem;
+  }
+  .add_linear_gradient_effect:before,
+  .add_linear_gradient_effect:after {
+    top: -70%;
+    left: -30%;
+    width: 80%;
+    padding-top: 80%;
+  }
+  .add_linear_gradient_effect:after {
+    /* right: -14%;
+        width: 113%; */
+
+    right: 10px;
+    width: 100%;
+    left: 0;
+    right: 30%;
+  }
+
+  .custom_hero_margin {
+    margin: 0 0 calc(var(--spaces) * 17);
+  }
+
+  .treasure:before {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    right: 20%;
+    bottom: 0px;
+    content: "";
+    z-index: 1;
+    background-image: url(../images/treasure.png);
+    background-size: 59%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .custom_hero_margin {
+    max-width: 55rem;
+  }
+}
+
+.HitSteps .inner_cards:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 3.25rem;
+  height: 1.5625rem;
+  content: "";
+  background: url("../images/arrow-step.svg");
+  transform: translate(-50%, 1.5625rem);
+
+  top: 1.4375rem;
+  right: 0.625rem;
+  left: auto;
+  transform: translate(0) rotate(-90deg);
+  right: -1.5625rem;
+}
 
 .TradingCompetitionSlide-holder {
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 82vw;
-    width: 100%;
-    height: 100%;
-    padding: 0 calc(var(--spaces)*3.75);
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 82vw;
+  width: 100%;
+  height: 100%;
+  padding: 0 calc(var(--spaces) * 3.75);
+}
+
+.menu-dropdown {
+  height: max-content;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.show {
+  background-color: hsla(0, 0%, 100%, 0.4);
+  height: 100%;
+  padding: 8px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+  transition: all 2s ease-in-out;
 }
