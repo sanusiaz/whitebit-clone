@@ -577,10 +577,6 @@ video {
   z-index: 50;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .z-20{
   z-index: 20;
 }
@@ -919,6 +915,10 @@ video {
 
 .w-\[37\%\]{
   width: 37%;
+}
+
+.w-\[15\%\]{
+  width: 15%;
 }
 
 .min-w-\[14rem\]{
@@ -2534,21 +2534,19 @@ svg {
 }
 
 @media (min-width: 640px){
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:w-\[80\%\]{
     width: 80%;
   }
 
-  .sm\:w-\[300px\]{
-    width: 300px;
-  }
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:gap-5{
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 768px){
@@ -2580,14 +2578,6 @@ svg {
     width: 28px;
   }
 
-  .md\:w-\[350px\]{
-    width: 350px;
-  }
-
-  .md\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2608,19 +2598,27 @@ svg {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .md\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .md\:pr-16{
+    padding-right: 4rem;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:w-\[414px\]{
     width: 414px;
   }
 
   .lg\:w-\[60\%\]{
     width: 60%;
-  }
-
-  .lg\:w-\[400px\]{
-    width: 400px;
   }
 
   .lg\:grid-cols-4{
@@ -2651,13 +2649,3 @@ svg {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:pt-10{
-    padding-top: 2.5rem;
-  }
-}
