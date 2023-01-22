@@ -577,12 +577,12 @@ video {
   z-index: 50;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .z-20{
   z-index: 20;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .-z-50{
@@ -974,6 +974,10 @@ video {
 
 .w-1{
   width: 0.25rem;
+}
+
+.w-\[15\%\]{
+  width: 15%;
 }
 
 .min-w-\[14rem\]{
@@ -2254,12 +2258,28 @@ header {
 }
 
 @media (min-width: 640px){
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:w-\[80\%\]{
     width: 80%;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:pl-14{
+    padding-left: 3.5rem;
+  }
+
+  .sm\:pr-14{
+    padding-right: 3.5rem;
   }
 }
 
@@ -2292,6 +2312,10 @@ header {
     width: 28px;
   }
 
+  .md\:w-\[62\%\]{
+    width: 62%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2308,15 +2332,35 @@ header {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .md\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .md\:pr-16{
+    padding-right: 4rem;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:w-\[414px\]{
     width: 414px;
   }
 
   .lg\:w-\[60\%\]{
     width: 60%;
+  }
+
+  .lg\:w-\[\]{
+    width: ;
+  }
+
+  .lg\:w-\[62\%\]{
+    width: 62%;
   }
 
   .lg\:grid-cols-4{
@@ -2342,5 +2386,27 @@ header {
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .lg\:pr-16{
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:w-\[\]{
+    width: ;
+  }
+
+  .xl\:w-\[62\%\]{
+    width: 62%;
   }
 }
