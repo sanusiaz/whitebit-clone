@@ -585,6 +585,18 @@ video {
   z-index: 20;
 }
 
+.-z-50{
+  z-index: -50;
+}
+
+.-z-0{
+  z-index: 0;
+}
+
+.-z-20{
+  z-index: -20;
+}
+
 .float-right{
   float: right;
 }
@@ -1619,6 +1631,14 @@ video {
 
 .pb-1{
   padding-bottom: 0.25rem;
+}
+
+.pt-\[\]{
+  padding-top: ;
+}
+
+.pt-\[64px\]{
+  padding-top: 64px;
 }
 
 .text-left{
