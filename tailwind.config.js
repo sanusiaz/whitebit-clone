@@ -2,6 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,css,js,php}"],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'tablet': '780px',
+      'lg': '1024px',
+      'laptop': '1180px',
+      'desktop': '1280px',
+      '2xl': '1280px',
+    },
     extend: {
       colors: {
         darkBgColor: '#08080c',
