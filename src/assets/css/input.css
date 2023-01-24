@@ -462,6 +462,29 @@ header {
   right: -1.5625rem;
 }
 
+@media screen and (max-width: 780px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .HitSteps .inner_cards:after {
+    
+    width: 3.25rem;
+    height: 1.5625rem;
+   
+    top: calc(100% + 19px);
+    left: calc(50% - 50px / 2);
+    right: -1.5625rem;
+    rotate: 90deg;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
 .TradingCompetitionSlide-holder {
   align-items: flex-start;
   justify-content: center;
