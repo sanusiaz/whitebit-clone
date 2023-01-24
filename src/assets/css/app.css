@@ -717,10 +717,6 @@ html {
   margin-top: 4rem;
 }
 
-.mr-\[4\.5rem\]{
-  margin-right: 4.5rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -917,18 +913,6 @@ html {
 
 .w-\[1020px\]{
   width: 1020px;
-}
-
-.w-\[62\%\]{
-  width: 62%;
-}
-
-.w-\[16\%\]{
-  width: 16%;
-}
-
-.w-\[61\%\]{
-  width: 61%;
 }
 
 .w-\[94\%\]{
@@ -1389,10 +1373,6 @@ html {
   padding: 0.5rem;
 }
 
-.p-12{
-  padding: 3rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -1409,16 +1389,20 @@ html {
   padding: 1rem;
 }
 
-.p-9{
-  padding: 2.25rem;
-}
-
 .p-20{
   padding: 5rem;
 }
 
 .p-7{
   padding: 1.75rem;
+}
+
+.p-12{
+  padding: 3rem;
+}
+
+.p-9{
+  padding: 2.25rem;
 }
 
 .p-24{
@@ -1463,9 +1447,14 @@ html {
   padding-right: 0.75rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-10{
@@ -1488,9 +1477,9 @@ html {
   padding-right: 2.5rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .px-8{
@@ -1573,11 +1562,6 @@ html {
   padding-bottom: 4rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1638,22 +1622,6 @@ html {
   padding-left: 2.25rem;
 }
 
-.pt-\[64px\]{
-  padding-top: 64px;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
-}
-
-.pl-16{
-  padding-left: 4rem;
-}
-
-.pr-16{
-  padding-right: 4rem;
-}
-
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1686,8 +1654,20 @@ html {
   padding-left: 3rem;
 }
 
+.pl-16{
+  padding-left: 4rem;
+}
+
 .pl-14{
   padding-left: 3.5rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pr-16{
+  padding-right: 4rem;
 }
 
 .pr-10{
@@ -1708,6 +1688,10 @@ html {
 
 .pt-0{
   padding-top: 0px;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .text-left{
@@ -1755,8 +1739,8 @@ html {
   line-height: 1rem;
 }
 
-.text-\[50px\]{
-  font-size: 50px;
+.text-\[30px\]{
+  font-size: 30px;
 }
 
 .text-\[25px\]{
@@ -1796,6 +1780,10 @@ html {
   line-height: 2.5rem;
 }
 
+.text-\[50px\]{
+  font-size: 50px;
+}
+
 .text-\[15\.5px\]{
   font-size: 15.5px;
 }
@@ -1810,10 +1798,6 @@ html {
 
 .text-\[13px\]{
   font-size: 13px;
-}
-
-.text-\[60px\]{
-  font-size: 60px;
 }
 
 .text-\[16\.7px\]{
@@ -1842,10 +1826,6 @@ html {
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
 }
 
 .font-\[400\]{
@@ -1880,12 +1860,12 @@ html {
   font-weight: 700;
 }
 
-.font-\[200\]{
-  font-weight: 200;
-}
-
 .font-\[500\]{
   font-weight: 500;
+}
+
+.font-\[200\]{
+  font-weight: 200;
 }
 
 .uppercase{
@@ -1902,6 +1882,10 @@ html {
 
 .leading-\[23px\]{
   line-height: 23px;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .leading-10{
@@ -1922,10 +1906,6 @@ html {
 
 .leading-6{
   line-height: 1.5rem;
-}
-
-.leading-normal{
-  line-height: 1.5;
 }
 
 .text-\[\#a6a6b0\]{
@@ -2823,10 +2803,6 @@ svg {
 }
 
 @media (min-width: 640px){
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:w-\[80\%\]{
     width: 80%;
   }
@@ -2903,6 +2879,10 @@ svg {
     width: 85%;
   }
 
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
   .md\:w-\[350px\]{
     width: 350px;
   }
@@ -2971,8 +2951,9 @@ svg {
     padding: 2.5rem;
   }
 
-  .md\:p-12{
-    padding: 3rem;
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:px-5{
@@ -3005,11 +2986,6 @@ svg {
     padding-bottom: 0.75rem;
   }
 
-  .md\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .md\:pb-8{
     padding-bottom: 2rem;
   }
@@ -3030,17 +3006,21 @@ svg {
     padding-bottom: 1.25rem;
   }
 
+  .md\:pt-16{
+    padding-top: 4rem;
+  }
+
   .md\:text-center{
     text-align: center;
+  }
+
+  .md\:text-\[50px\]{
+    font-size: 50px;
   }
 
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-\[50px\]{
-    font-size: 50px;
   }
 }
 
@@ -3117,6 +3097,10 @@ svg {
     width: 60%;
   }
 
+  .lg\:w-\[61\%\]{
+    width: 61%;
+  }
+
   .lg\:max-w-\[816px\]{
     max-width: 816px;
   }
@@ -3151,6 +3135,10 @@ svg {
 
   .lg\:gap-7{
     gap: 1.75rem;
+  }
+
+  .lg\:p-0{
+    padding: 0px;
   }
 
   .lg\:p-20{
@@ -3189,6 +3177,10 @@ svg {
 
   .lg\:pt-40{
     padding-top: 10rem;
+  }
+
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
 
   .lg\:pt-10{
