@@ -275,19 +275,131 @@ header {
 
   .treasure:before {
     position: absolute;
-    top: 20%;
-    left: 0px;
+    top: 30%;
+    left: 5%;
     right: 20%;
     bottom: 0px;
     content: "";
     z-index: 1;
     background-image: url(../images/treasure.png);
-    background-size: 59%;
+    background-size: 67%;
     background-repeat: no-repeat;
     background-position: right center;
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .treasure:before {
+    position: absolute;
+    right: -44.444444vw;
+    z-index: 3;
+    width: 146.66666666666666vw;
+    min-width: 38.4375rem;
+    height: 116.3888888888889vw;
+    pointer-events: none;
+    background: url(../images/treasure.png);
+    content: '';
+    background-position: center center;
+    background-size: contain;
+    top: -33%;
+    left: 2px;
+    background-size: 100%;
+    max-width: 53rem;
+    left: 35%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .treasure:before {
+    visibility: visible;
+    top: -16%;
+    left: 140px;
+    position: absolute;
+  }
+  @media screen and (max-width: 700px) {
+    .treasure:before {
+      position: absolute;
+      right: -44.44444444444444vw;
+      z-index: 3;
+      width: 146.66666666666666vw;
+      min-width: 38.4375rem;
+      max-width: 58.75rem;
+      height: 116.3888888888889vw;
+      pointer-events: none;
+      background: url(../images/treasure.png);
+      content: '';
+      background-position: center center;
+      background-size: contain;
+      left: -20px;
+      top: -20%;
+      left: 0px;
+      background-size: 100%;
+      max-width: 53rem;
+      left: 12%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .treasure:before {
+      top: -9%;
+      left: 22px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .treasure:before {
+      top: 0%;
+      left: -20px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .treasure:before {
+      top: 0%;
+      left: -20px;
+    }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .treasure:before {
+      position: absolute;
+        right: -44.44444444444444vw;
+        z-index: 3;
+        width: 146.66666666666666vw;
+        min-width: 38.4375rem;
+        max-width: 58.75rem;
+        height: 116.3888888888889vw;
+        pointer-events: none;
+        background: url(../images/treasure.png);
+        content: '';
+        background-position: center center;
+        background-size: 96%;
+        left: -20px;
+        top: 3px;
+        background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .treasure:before {
+      top: 10%;
+      left: -30px;
+    }
+  }
+
+  @media screen and  (max-width: 365px) {
+    .treasure:before {
+      top: 13%;
+      left: -68px;
+    }
+  }
+}
+
+
 
 @media screen and (min-width: 768px) {
   .custom_hero_margin {
