@@ -45,16 +45,7 @@ $(document).ready(function () {
 
 
 
-    var elementPosition = $('.add_fixed_on_scroll').offset();
-
-    $(window).scroll(function(){
-      if($(window).scrollTop() > elementPosition.top){
-            $('.add_fixed_on_scroll').addClass('fixed_aside');
-      } else {
-        $('.add_fixed_on_scroll').removeClass('fixed_aside');
-      }    
-    });
-
+   
     let __slide = $(".splide");
 
     if ( __slide !== undefined && __slide !== null && __slide.length > 0 ) {

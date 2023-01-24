@@ -1116,6 +1116,19 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        var elementPosition = $('.add_fixed_on_scroll').offset();
+
+        $(window).scroll(function(){
+          if($(window).scrollTop() > elementPosition.top){
+                $('.add_fixed_on_scroll').addClass('fixed_aside');
+          } else {
+            $('.add_fixed_on_scroll').removeClass('fixed_aside');
+          }    
+        });
+    
+    </script>
 </body>
 
 </html>
