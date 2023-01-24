@@ -6,6 +6,44 @@
 }
 
 @tailwind base;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+:root {
+  --primary: #d4d2d2;
+  --secondary: grey;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+
 @tailwind components;
 @tailwind utilities;
 
@@ -643,3 +681,46 @@ svg {
 
 
 /*[ === CUSTOM DIRECTIVES END  === ]*/
+
+/*[ === AML POLICY PAGE STYLING START === ]*/
+
+@media screen and (min-width: 780px) {
+
+  .fixed_aside {
+    position: fixed;
+    bottom: unset;
+    left: unset;
+    align-self: start;
+    width: 456px;
+    height: auto;
+    background-color: white;
+    top: 22%;
+    max-height: 500px;
+    right: 43px;
+    max-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .fixed_aside {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 780px ) {
+  .fixed_aside {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .fixed_aside {
+      width: 100%;
+    }
+  }
+}
+/*[ === AML POLICY PAGE STYLING END === ]*/
