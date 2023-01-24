@@ -733,6 +733,18 @@ html {
   margin-left: 1.25rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1638,10 +1650,6 @@ html {
   padding-left: 0.25rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .pb-\[80px\]{
   padding-bottom: 80px;
 }
@@ -1656,6 +1664,10 @@ html {
 
 .pl-16{
   padding-left: 4rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pl-14{
@@ -1794,10 +1806,6 @@ html {
 
 .text-\[19px\]{
   font-size: 19px;
-}
-
-.text-\[13px\]{
-  font-size: 13px;
 }
 
 .text-\[16\.7px\]{
@@ -2752,11 +2760,6 @@ svg {
 .hover\:bg-primaryActiveColor:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(227 198 130 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-slate-200:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .hover\:stroke-blue-500:hover{
