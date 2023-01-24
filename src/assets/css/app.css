@@ -1492,6 +1492,11 @@ video {
   padding-right: 4rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2693,6 +2698,11 @@ svg {
     padding-right: 2.5rem;
   }
 
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .sm\:pl-14{
     padding-left: 3.5rem;
   }
@@ -2745,6 +2755,10 @@ svg {
 
   .md\:w-\[350px\]{
     width: 350px;
+  }
+
+  .md\:w-\[85\%\]{
+    width: 85%;
   }
 
   .md\:max-w-\[700px\]{
