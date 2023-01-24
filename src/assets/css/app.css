@@ -1573,6 +1573,11 @@ html {
   padding-bottom: 4rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1839,6 +1844,10 @@ html {
   line-height: 1;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .font-\[400\]{
   font-weight: 400;
 }
@@ -1913,6 +1922,10 @@ html {
 
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .text-\[\#a6a6b0\]{
@@ -2958,6 +2971,10 @@ svg {
     padding: 2.5rem;
   }
 
+  .md\:p-12{
+    padding: 3rem;
+  }
+
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2988,6 +3005,11 @@ svg {
     padding-bottom: 0.75rem;
   }
 
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pb-8{
     padding-bottom: 2rem;
   }
@@ -3015,6 +3037,10 @@ svg {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-\[50px\]{
+    font-size: 50px;
   }
 }
 
